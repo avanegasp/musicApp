@@ -1,0 +1,10 @@
+<h1>Acá te mostraremos todos los artistas</h1>
+
+<ul>
+  <%= @artists.each do |artist| %>
+  <li><a href="/artists/<%= artist.id %>">artist.name</a></li>
+  <%= end %>
+</ul>
+
+<a href="artists/new">Crear nueva entrada de artista</a>
+<a href="/">Volver a landing</a>
